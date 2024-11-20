@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<%- include('./partials/head.ejs') %>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="homeContainer">
+        <section id="mainHome">
+        
+            <img src="/logo.png" alt="logo" width="300px" height="300px">
+            <h1>Welcome to AdNU Course Compass!</h1>
+            <p>Our project aims to develop a local version of the RMP website for Ateneo de Naga University (AdNU), but unlike RMP, our platform will allow students to rate the courses offered by each college, rather than the professors. This approach fosters a respectful and constructive environment while providing students with valuable insights into the course content, structure, and delivery.</p>
+
+            <a id="letsRateBtn" href="/departments">Let's Rate</a>
+            <!-- <div class="searchContainer">
+                <input type="text" id="searchSubjCode" placeholder="Subject Code">
+                <button id="searchBtn" class="searchCourseBtn">Search</button>
+            </div>
+            <div class="searchExtraContainer">
+                <a class="searchBtnExtra searchCoursesBtn">Courses</a>
+                <a class="searchBtnExtra searchDepartmentsBtn" href="/departments">Departments</a>
+            </div> -->
+        </section>
+    </div>
+
+    <div>
+        <%- include('./partials/footer.ejs') %>
+
+    </div>
+    <script type="module" src="/firebase.js"></script>    
+
+    <script>
+         document.getElementById('searchBtn').addEventListener('click', (e) => {
+            var subjectcode = document.getElementById("searchSubjCode").value;
+            window.location.href= "/subject/"+subjectcode;
+
+        })
+       
+    </script>
+</body>
+</html>

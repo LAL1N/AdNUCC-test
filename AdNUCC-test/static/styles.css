@@ -1,0 +1,970 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #D9D9D9;
+}
+
+
+#wholeBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin-top: -50px;
+}
+
+
+/* rightboxx */
+#rightBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#rightBox h2{
+    font-family: "Oxygen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+    color: #0B2353;
+}
+
+
+#rightBox p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #595656;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+#leftBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+nav{
+    display: flex;
+    background-color: #29398C;
+    color: white;
+    padding: 10px;
+}
+
+/* footer */
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out content */
+}
+
+main {
+    flex: 1; /* This will take up remaining space */
+    height: 100%;
+}
+
+
+
+footer {
+    background-color: #29398C;
+    padding: 50px;
+    color: white;
+}
+
+/* footer */
+
+/* Full viewport height container */
+#container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh; 
+    background-color: #f0f0f0; 
+    padding: 20px;
+}
+
+/* Left box containing forms and alert */
+#leftBox {
+    margin: 10px;
+    margin-top: 50px;
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    width: 100%;
+    max-width: 400px; 
+}
+
+/* Alert box styling */
+#alertBox {
+    background-color: #f8d7da; 
+    color: #721c24; 
+    padding: 10px;
+    border: 1px solid #f5c6cb; 
+    border-radius: 4px;
+    margin-bottom: 20px; 
+    text-align: center;
+    display: none;
+}
+
+/* Common form styling// REGISTER&LOGIN */ 
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff; 
+    color: #fff; 
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+/* Styling for links */
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 50px;
+    padding: 40px;
+
+    font-family: "Oxygen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.gallery-item {
+    background-color: #170761   ;
+    padding: 20px; 
+    border-radius: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center;
+    height: 100px; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+
+}
+
+.gallery-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+    background-color: rgb(54, 54, 54);
+}
+
+#galleryTitle{
+   padding: 20px;
+   font-family: "Oxygen", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+}
+
+
+/* for course */
+
+.subjects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px; /* Space between the squares */
+    padding: 20px;
+  }
+
+  .subject-card {
+    background-color: #f4f4f4; /* Light background */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .subject-card h4, .subject-card h3 {
+    text-align: left;
+    color: #333;
+    font-family: "Oxygen"
+  }
+
+  .subject-card h4{
+    font-size: 15px;
+  }
+
+  .subject-card h3{
+    font-size: 40px;
+  }
+
+  .subject-card:hover {
+    transform: scale(1.05); /* Slightly grow the square on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+
+  .star{
+   color: rgb(255, 255, 255);
+  }
+
+  .star:hover{
+    color: gold;
+  }
+
+  .star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Change the color of stars when checked */
+.star-rating input:checked ~ label {
+    color: #f5b301;
+}
+
+/* Hover effect to preview rating */
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #f5b301;
+}
+
+/* stars */
+#subjectBox {
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    margin-bottom: -50px;
+
+}
+
+#rate-box {
+    padding: 20px;
+    color: white;
+    border-radius: 25px;
+    background-color: #29398C;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 40px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Background blur */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 100px;
+    width: 250px;
+    max-width: 1000px; /* Increased max-width */
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2em; 
+    cursor: pointer;
+}
+
+
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    font-size: 5em; /* Larger star size */
+    margin: 20px 0;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Gold stars when selected */
+.star-rating input:checked + label,
+.star-rating input:checked + label ~ label {
+    color: #f5b301; /* Make selected stars gold */
+}
+
+/* Maintain gold color when hovering after rating */
+.star-rating input:checked ~ label:hover,
+.star-rating input:checked ~ label:hover ~ label {
+    color: #f5b301;
+}
+
+/* Hover preview */
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #f5b301;
+}
+
+/* Styled textarea */
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    resize: vertical;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+}
+
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#reviews {
+    display: flex;
+    padding: 20px;
+    gap: 20px; 
+}
+
+#reviewBox1 {
+    background-color: #ffffff;
+    border-radius:20px ;
+    padding: 20px;
+    color: rgb(8, 0, 62);
+    word-wrap: break-word;
+}
+
+#reviewBox2 {
+    flex-grow: 2; 
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+
+.reviewStars, .avgStars{
+    display: flex;
+    cursor: pointer;
+}
+
+.reviewStars h1{
+    font-size: 30px;
+}
+
+.avgStars{
+    font-size: 30px;
+}
+
+
+#reviewUSN{
+    margin-bottom: 10px;
+}
+
+#sidebar {
+    height: 100%;
+    width: 200px;
+    top: 50;
+    left: 0;
+    padding-top: 20px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 50px;
+    padding-top: 60px;
+}
+
+#sidebar a {
+    margin-left: 0px;
+    
+    padding: 15px;
+    text-decoration: none;
+    font-size: 23px;
+    color: #78777E;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#sidebar a:hover {
+    color: white;
+    background-color: #29398C;
+    border-radius: 10px;
+}
+
+#main-content {
+    width: 100%;
+    padding: 20px;
+}
+
+#sidebar h2{
+    font-size: 20px;
+}
+
+/* for reviews */
+
+#avgRating{
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+}
+
+#avgTitle{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    color: #595656;
+}
+
+#subjectData{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#subjectData h2{
+    font-size: 45px;
+}
+
+#subjectData h3{
+    font-size: 25;
+    color: #595656;
+}
+
+#reviewCount{
+    margin: 20px 50px; 
+    margin-top: 120px; 
+    font-size: 20px; 
+    color: #2E2E2E;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#main{
+    display: flex;
+
+    /* Temporary */
+    height: 100%;
+}
+
+#main-temp{
+    display: flex;
+
+    /* Temporary */
+}
+
+/* another gallery css */
+
+#galleryTitle{
+    font-size: 35px;
+}
+
+
+/* for password */
+
+.passBox{
+    display: flex;
+    background-color: #d9d9d9;
+    border-radius: 25px;
+    width: 100%;
+    padding: 5px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.passBox i{
+
+    color: #2E2E2E;
+
+}
+
+.passBox input{
+    background: none;
+}
+#logBox{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    
+    
+}
+
+.navTitle > *{
+    font-family: "Oxygen"
+}
+.btn{
+    font-weight: 600;
+    width: 150px;
+    border-radius: 25px;
+}
+
+.btn.loginBtn{
+    color: black;
+    background-color:white;
+}
+
+.btn.signupBtn{
+
+}
+
+a.btn.signupBtn{
+    background-color: black;
+    color:white;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Oxygen";
+    text-align: center;
+}
+
+#signOut{
+    background-color: white;
+    color:black;
+}
+
+#uLogged{
+    align-items:center;
+    gap: 2rem;
+}
+#uLogged > h1{
+   font-family: "Oxygen";
+   font-size: 1rem;
+}
+
+#uNotLogged{
+    display: flex;
+    gap: 1rem;
+}
+
+.homeContainer{
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+}
+section#mainHome{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content:center;
+    gap: 1rem;
+    padding-block: 2rem;
+
+}
+
+#mainHome>*{
+    font-family: "Oxygen"
+}
+
+#mainHome > h1{
+    color: #170761;
+
+}
+
+#mainHome > p {
+    min-width: 500px;
+    max-width: 750px;
+    text-align: center;
+}
+
+.searchExtraContainer{
+    display: flex;
+    gap: 1rem;
+}
+.searchContainer{
+    display: flex;
+
+}
+#searchSubjCode{
+    
+    border-radius: 5px 0 0 5px;
+    padding: 1rem;
+    width: 250px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.searchCourseBtn{
+    border-radius: 0 5px 5px 0;
+    font-size: 12px; 
+    cursor: pointer;
+    color:white;
+    background-color: #29398C;
+}
+
+
+.searchBtnExtra{
+    font-size: 12px; 
+    cursor: pointer;
+    color:#29398C;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 350px; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #loginBox > *{
+    font-family: "Oxygen";
+    box-sizing: border-box;
+  }
+
+  p.loginTitle{
+    color: #170761;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Oxygen";
+  }
+
+  #loginBox{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 3rem;
+    justify-content: center;
+  }
+
+#Lemail{
+    /* background-color:#D9D9D9 !important; */
+    padding: 10px;
+    width: 100%;
+    border-radius: 25px;
+    outline:none;
+    border: none;
+  }
+
+#Lpassword{
+    width: 100%;
+    border:none;
+    outline: none;
+
+}
+
+#LsubmitBTN{
+    width: 100%;
+    border-radius: 25px;
+    color:white;
+    font-size: .85rem;
+    background: #170761;
+
+}
+
+#regis > #submitBTN{
+    color:white;
+    background: #170761;
+}
+
+
+.registerP{
+    color: gray;
+    font-size:
+}
+
+
+#regis{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: start;
+    box-sizing: border-box;
+    font-family: "Oxygen";
+    gap: 1rem;
+}
+#regis > *{
+    color: black;
+    font-family: "Oxygen";
+    box-sizing: border-box;
+}
+
+#regis > * > *{
+
+    box-sizing: border-box;
+}
+
+#regis > * > * > *{
+
+    box-sizing: border-box;
+}
+
+.regisForm > label{
+    text-align: start;
+}
+
+.regPass1 > input{
+    border:none;
+    outline: none;
+    border-radius: 2px;
+}
+
+
+.regPass2 > input{
+    border:none;
+    outline: none;
+    border-radius: 2px;
+}
+
+.regPass1, .regPass2{
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display:flex;
+    align-items:center;
+}
+
+.regPass1 > i{
+    padding: 8px;
+}
+
+.regPass2 > i{
+    padding: 8px;
+}
+
+
+input#Lemail:-webkit-autofill,
+input#Lemail:-webkit-autofill:hover, 
+input#Lemail:-webkit-autofill:focus, 
+input#Lemail:-webkit-autofill:active{
+      border:none;
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+  input#Lpassword:-webkit-autofill,
+  input#Lpassword:-webkit-autofill:hover, 
+  input#Lpassword:-webkit-autofill:focus, 
+  input#Lpassword:-webkit-autofill:active{
+        border:none;
+      -webkit-box-shadow: 0 0 0 30px white inset !important;
+  }
+
+
+div#loginPage{
+    display:flex;
+    flex-direction: column;
+}
+
+#loginForm{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 350px;
+}
+
+#loginPage > .top{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: "Oxygen";
+}
+
+#loginPage > .top > *{
+    font-family: inherit;
+}
+
+.userBox{
+    border-radius:25px;
+    background-color:white;
+}
+
+.userBox > #Lemail{
+    background-color:transparent;
+}
+.passBox{
+    background-color:white;
+    width: auto;
+}
+
+.hoverhand:hover{
+    cursor:pointer;
+}
+#registerBox{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+#registerPage{
+    display:flex;
+    flex-direction: column;
+    padding-block: 4rem;
+}
+
+#registerPage > .top{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: "Oxygen";
+}
+
+#registerPage > .top > *{
+    font-family: inherit;
+}
+
+#registerBox{
+    width: 350px;
+    align-self:center;
+}
+
+#regis > div>input{
+    border-radius: 25px;
+    padding: 8px;
+}
+
+#regis > div>div>input{
+    border:0;
+
+}
+#regis > div>div>input:focus{
+    outline:none;
+}
+
+#letsRateBtn{
+    background-color: #29398C;
+    color:white;
+    padding: 12px 36px;
+    border-radius: 24px;
+    
+}
+
+#reviewTXT{
+    box-sizing:border-box;
+    padding: 12px;
+    resize:none;
+
+}
+
+#closeIn{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between; 
+    font-family: 'Oxygen';
+    text-align: start;
+    flex-direction: column;
+    justify-content:start;
+    align-items:start;
+}
+
+#modalCont{
+    width: 450px;
+}
+
+#emoticons{
+    font-family: "Oxygen";
+}

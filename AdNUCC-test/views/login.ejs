@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<%- include('./partials/head.ejs') %>
+
+<body>
+
+    
+    <nav style="display: flex; justify-content: space-between;">
+        <div class="navTitle" style="display: flex; align-items: center;">
+            <a href="/"><img src="/logo.png" alt="logo" width="100px" height="100px"></a>
+            <h1>ADNU <span><br> Course Compass</span></h1>
+        </div>
+        <div id="logBox" >
+            <div id="uNotLogged">
+                
+                <a href="/register" class="btn signupBtn">Sign Up</a>
+            </div>
+        
+        </div>
+      
+
+
+    </nav>
+
+
+    <div id="loginPage">
+       
+        
+            <div class="top">
+                <img src="/logo.png" alt="AdNUCC logo" style="height: 350px;">
+                <h2 style="text-align: center;">ADNU COURSE COMPASS</h2>
+                <p>Login with Email</p>
+            </div>
+      
+
+
+
+        <div class="bottom">
+            <p id="alertBox">a</p>
+
+            <div id="loginBox">
+                <form id="loginForm">
+                    <div class="userBox">
+                        <input type="email" placeholder="Email" name="Lemail" id="Lemail" required autocomplete="off">
+                    </div>
+                    <div class="passBox">
+                        
+                        <input type="password" placeholder="Password" name="Lpassword" id="Lpassword" required>
+                         <i id="eye" class="fas fa-eye hoverhand"></i>
+
+
+                    </div>
+                    <button id="LsubmitBTN" type="submit">Submit</button>
+                </form>    
+                 <p>Don't have an account yet? <a href="/register" id="reghere">Register</a></p>
+
+            </div>
+
+        
+        </div>
+
+    </div>
+    <div>
+        <%- include('./partials/footer.ejs') %>
+
+    </div>
+
+    <script type="module" src="/firebase.js"></script>
+    <script src="/index.js"></script>
+    
+
+    <script>
+        document.getElementById('eye').addEventListener('click', (e) => {
+            const Lpassword = document.getElementById('Lpassword');
+            let type = Lpassword.getAttribute('type') === 'password'? "text" : "password";
+            Lpassword.setAttribute('type', type);
+
+        })
+    </script>
+</body>
+</html>
